@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body style="background-color: black; color: #fff;" >
+  <body style="background-color: black; color: #fff">
     <script>
-
       // Write a JavaScript function to calculate the sum of two numbers.
 
       // function abc(a,b){
@@ -35,18 +34,18 @@
 
       // Write a JavaScript program to sort the number in an array and print second highest number
 
-      //   let arr = [5,7,9,12,55,41,20];
-      //   let swap;
+      // let arr = [5,7,9,12,55,41,20];
+      // let swap;
 
-      //   for(let i = 0; i < arr.length; i++){
-      //     for(let j = i; j < arr.length; j++){
-      //       if(arr[i] > arr[j]){
-      //       swap = arr[i];
-      //       arr[i] = arr[j];
-      //       arr[j] = swap;
-      //       }
+      // for(let i = 0; i < arr.length; i++){
+      //   for(let j = i; j < arr.length; j++){
+      //     if(arr[i] > arr[j]){
+      //     swap = arr[i];
+      //     arr[i] = arr[j];
+      //     arr[j] = swap;
       //     }
       //   }
+      // }
 
       // console.log(arr[arr.length-2])
 
@@ -71,19 +70,139 @@
       // let a = 'Rohit';
       // console.log(a.split('').reverse().join(''));
 
-      // Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers. 
+      // Write a JavaScript function that takes an array of numbers and returns a new array with only the even numbers.
 
-      function abc(a){
-        let b = [];
-        for(let i = 0; i < a.length; i++){
-          if(a[i] % 2 === 0){
-            b.push(a[i])
+      // function abc(a){
+      //   let b = [];
+      //   for(let i = 0; i < a.length; i++){
+      //     if(a[i] % 2 === 0){
+      //       b.push(a[i])
+      //     }
+      //   }
+      //   console.log(b)
+      // }
+
+      // abc([11,12,13,56,17]);
+
+      // Write a JavaScript program to calculate the factorial of a given number.
+
+      // function abc(x) {
+      //   let fact = 1;
+      //   for (let i = 1; i <= x; i++) {
+      //     fact = fact * i;
+      //   }
+      //   console.log( fact );
+      // }
+      // abc(6)
+
+      // let s = "madam";
+      // let s = "Student";
+
+      // let rev = "";
+      // for (let i = s.length - 1; i >= 0; i--) {
+      //   rev = rev + s[i];
+      // }
+
+      // console.log(rev + " reverse answer");
+
+      // if(s == rev){
+      //   console.log("Yes this is a palindrome")
+      // }else{
+      //   console.log("No this is a palindrome")
+      // }
+
+      // Write a JavaScript program to calculate the factorial of a given number. second approach
+
+      // function factorial(number) {
+      //   if (number === 0 || number === 1) {
+      //     return 1;
+      //   } else {
+      //     return number * factorial(number - 1);
+      //   }
+      // }
+
+      // console.log(factorial(5));
+
+      // Write a JavaScript function to check if a given number is prime.
+
+      // function prime(a){
+      //   if(a <= 0){
+      //     return "Please enter valid number"
+      //   }
+      //   else if(a==1){
+      //     return "1 is not a prime number"
+      //   }
+      //   else{
+      //     let primeNumber = true;
+      //     for(let i = 2; i < a; i++){
+      //       if(a % i == 0){
+      //          primeNumber = false;
+      //       }
+      //     }
+      //     if(primeNumber){
+      //       return "Yes " + a + " is a prime number"
+      //     }else{
+      //     return "No " + a + " is not a prime number"
+      //     }
+      //   }
+      // }
+
+      // console.log(prime(11))
+
+      // function checkPrime(x) {
+      //   let res ;
+      //   if (x <= 1) {
+      //     console.log(x + " is not a prime , not a non-prime number");
+      //   } else {
+      //     for (let i = 2; i < x; i++) {
+      //       if (x % i == 0) {
+      //         return res = x + " is not a prime number";
+      //       } else {
+      //         return res = x + " is a prime number";
+      //       }
+      //     }
+      //     console.log(res);
+      //   }
+      // }
+
+      // checkPrime(2);
+
+
+      // find largest number 
+
+      // let array1 = [1,2,93,4,5,30];
+      // let swap = 0;
+
+      // for(let i = 0; i <= array1.length; i++){
+      //   if(array1[i] > swap){
+      //      swap = array1[i]
+      //   }
+      // }
+      // console.log(swap)
+
+
+      // Find the largest element in the array 
+
+      let array1 = [[1,2,3],[45,5,16],[7,18,99]];
+      let x = 0;
+
+      for(let i = 0; i < array1.length; i++){
+        for(let j = 0; j < array1[i].length; j++){
+          if(array1[i][j] > x){
+            x = array1[i][j]
           }
         }
-        console.log(b)
       }
 
-      abc([11,12,13,56,17]);
+      console.log(x)
+
     </script>
   </body>
 </html>
+
+s = "madam" Yes s = "Student" No
+<!-- pallindrome -> left to right or right to left = equal -->
+
+let rev = ""; for(let i = s.length-1 ; i >= 0; i--){ rev = rev + s[i] "" + "m"
+-1 rev = "m" m + "a" rev = "ma" ma + "d" rev = "mad" mad + "a" rev = "mada" mada
++ "m" rev = "madam" } console.log(rev)
